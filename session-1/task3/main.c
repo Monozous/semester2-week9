@@ -10,8 +10,19 @@ int main( void ) {
     Stack *stack = createStack();
 
     // push() - add some data to the stack
-    push(stack,createData(1));
+    push(stack,createData(10));
     displayStack (stack);
+    pop(stack);
+    displayStack (stack);
+    push(stack,createData(10));
+    displayStack (stack);
+    push(stack,createData(101));
+    displayStack (stack);
+    push(stack,createData(12));
+    displayStack (stack);
+    pop(stack);
+    displayStack (stack);
+    
 
     // free stack dynamic memory
     freeStack( stack );

@@ -13,8 +13,10 @@ int main( void ) {
     Stack *stack = createStack();
 
     // push a node
-    push(stack,1);
+    push(stack,15);
     traverseI(stack->top);  // display the stack
+
+
 
     // free stack memory
     freeNodes( stack->top );
